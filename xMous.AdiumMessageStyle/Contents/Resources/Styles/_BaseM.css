@@ -1,0 +1,179 @@
+@charset "utf-8";
+
+body
+{
+	background-color: hsla(0, 0%, 70%, 1);
+}
+
+#Chat > div:first-of-type .x-mark,
+#Chat > div:first-of-type .x-message,
+#Chat > div:first-of-type .x-mention
+{
+	border-top: 4px solid hsla(0, 0%, 100%, 1);
+}
+
+#insert .x-mark,
+#insert .x-message,
+#insert .x-mention
+{
+	border-bottom: 4px solid hsla(0, 0%, 100%, 1);
+}
+
+#Chat > div:first-of-type .x-focus,
+#Chat > div:first-of-type .x-icon,
+#Chat > div:first-of-type .x-sender,
+#Chat > div:first-of-type .x-time
+{
+	border-top: 4px solid hsla(0, 0%, 90%, 1);
+}
+
+#insert .x-focus,
+#insert .x-icon,
+#insert .x-sender,
+#insert .x-time
+{
+	border-bottom: 4px solid hsla(0, 0%, 90%, 1);
+}
+
+.history + :not(.history) .x-mark,
+.history + :not(.history) .x-message,
+.history + :not(.history) .x-mention
+{
+	border-top: 16px solid hsla(0, 0%, 100%, 1) !important;
+}
+
+.history + :not(.history) .x-focus,
+.history + :not(.history) .x-icon,
+.history + :not(.history) .x-sender,
+.history + :not(.history) .x-time
+{
+	border-top: 16px solid hsla(0, 0%, 90%, 1) !important;
+}
+
+.x-focus,
+.x-icon,
+.x-sender,
+.x-time,
+.history .x-message,
+.history .x-mention,
+.history.status .x-mark,
+.history.event .x-mark
+{
+	background-color: hsla(0, 0%, 90%, 1) !important;
+}
+
+.status,
+.event
+{
+	color: hsla(0, 0%, 59%, 1) !important;
+}
+
+.status:hover,
+.event:hover
+{
+	color: hsla(0, 0%, 33%, 1) !important;
+}
+
+.status .x-mark,
+.event .x-mark
+{
+	background-color: hsla(0, 0%, 100%, 1) !important;
+}
+
+.history .x-focus,
+.history .x-icon,
+.history .x-sender,
+.history .x-time
+{
+	background-color: hsla(0, 0%, 80%, 1) !important;
+}
+
+.x-hover > .x-mark,
+.x-hover > .x-message,
+.x-hover:not(.mention) > .x-mention
+{
+	background-color: hsla(0, 0%, 90%, 1) !important;
+}
+
+.history.x-hover > .x-mark,
+.history.x-hover > .x-message,
+.history.x-hover:not(.mention) > .x-mention
+{
+	background-color: hsla(0, 0%, 80%, 1) !important;
+}
+
+.focus .x-focus
+{
+	background: hsla(0, 0%, 18%, 1) !important;
+}
+
+.x-mark
+{
+	border-left-color: hsla(0, 0%, 80%, 1);
+}
+
+.history .x-mark
+{
+	border-left-color: hsla(0, 0%, 65%, 1);
+}
+
+.x-message,
+.x-mention
+{
+	background-color: hsla(0, 0%, 100%, 1);
+}
+
+.x-mention
+{
+	border-right-color: hsla(0, 0%, 80%, 1) !important;
+}
+
+.history .x-mention
+{
+	border-right-color: hsla(0, 0%, 65%, 1) !important;
+}
+
+.message:not(.history):not(.consecutive) .x-mark,
+.message:not(.history):not(.consecutive) .x-message,
+.message:not(.history):not(.consecutive) .x-mention
+{
+	border-top: 1px solid hsla(0, 0%, 100%, 1);
+}
+
+.message.history:not(.consecutive) .x-mark,
+.message.history:not(.consecutive) .x-message,
+.message.history:not(.consecutive) .x-mention
+{
+	border-top: 1px solid hsla(0, 0%, 90%, 1);
+}
+
+/*----------*/
+
+#x-topic
+{
+	color: hsla(0, 0%, 18%, .8);
+}
+
+#x-topic #x-wrap
+{
+	background-color: hsla(0, 0%, 85%, .85);
+	border-bottom: 1px solid hsl(0, 0%, 87%) !important;
+	-webkit-box-shadow: 0px 1px 2px hsla(0, 0%, 0%, .2);
+}
+
+#x-topic .x-toggle
+{
+	-webkit-box-shadow: 0px 1px 2px hsla(0, 0%, 0%, .2), 0px 0px 2px hsla(0, 0%, 0%, .2);
+}
+
+#x-topic .x-toggle#x-hide,
+#x-topic .x-toggle#x-show:hover
+{
+	background-color: hsla(0, 0%, 90%, 1);
+}
+
+#x-topic .x-toggle#x-hide:hover,
+#x-topic .x-toggle#x-show
+{
+	background-color: hsla(0, 0%, 95%, 1);
+}

@@ -1,0 +1,67 @@
+@charset "utf-8";
+
+.incoming,
+.consecutive.message .x-sender:after
+{
+	color: hsla(0, 0%, 63%, 1);
+}
+.outgoing
+{
+	font-weight: bold;
+	color: hsla(0, 0%, 83%, 1);
+}
+
+.incoming.message:not(.consecutive) {
+	border-top: 20px solid #fff;
+	margin-top: 1px;
+}
+
+.incoming:hover,
+.incoming.x-hover,
+.consecutive.message:hover .x-sender:after,
+.consecutive.message.x-hover .x-sender:after
+{
+	color: hsla(0, 0%, 80%, 1) !important;
+}
+.outgoing:hover,
+.outgoing.x-hover,
+.outgoing.message .x-mark
+{
+	color: hsla(0, 0%, 100%, 1) !important;
+}
+
+.outgoing.message:not(.x-hover) .x-mark
+{
+	background-color: hsla(0, 0%, 100%, 1) !important;
+}
+
+.outgoing.message:not(.x-hover) .x-mark
+.outgoing.message.x-hover .x-mark
+{
+	color: hsla(0, 0%, 100%, 1) !important;
+}
+
+.status .x-mark,
+.event .x-mark
+{
+	color: hsla(0, 0%, 0%, 1) !important;
+}
+
+.status.history .x-mark,
+.event.history .x-mark
+{
+	color: hsla(0, 0%, 12.5%, 1) !important;
+}
+
+.mention > .x-mention
+{
+	background: rgba(38, 38, 38, 1) !important;
+}
+
+.mention > .x-message {
+	background: rgba(38, 38, 38, 1);
+}
+
+.x-mark {
+	display: none;
+}
